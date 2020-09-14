@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="days">
+        <item>الاحد</item>
+        <item>الاثنين</item>
+        <item>الثلاثاء</item>
+        <item>الاربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+    </array>
+
+
+    <array name="type">
+        <item>شهادة</item>
+        <item>رخصة</item>
+    </array>
+
+    <array name="status">
+        <item>تربية خاصة</item>
+        <item>عادي</item>
+    </array>
+
+
+    <array name="statuss">
+        <item>مدرس</item>
+        <item>اداري</item>
+        <item>مدير</item>
+
+    </array>
+
+</resources>

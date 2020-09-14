@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.rayaan">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Daycare.Worker.AddWorkerActivity">
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".ChooseUserActivity">
+        </activity>
+        <activity android:name=".Parent.ChatActivity">
+        </activity>
+        <activity android:name=".Parent.Child.ChildActivity">
+        </activity>
+        <activity android:name=".Parent.ParentMainActivity">
+        </activity>
+        <activity android:name=".Daycare.Specialist.ChatActivity">
+        </activity>
+        <activity android:name=".Daycare.Specialist.SpecialistActivity"/>
+        <activity android:name=".Specialist.Daycare.DaycareActivity"/>
+        <activity android:name=".Specialist.SpecialistMainActivity">
+        </activity>
+        <activity android:name=".Daycare.Complaint.ComplaintActivity">
+        </activity>
+        <activity android:name=".Admin.Daycare.Complaint.ComplaintActivity"/>
+        <activity android:name=".Daycare.Ads.AddAdsActivity">
+        </activity>
+        <activity android:name=".Daycare.Ads.EditAdsActivity"/>
+        <activity android:name=".Daycare.License.LicenseActivity"/>
+        <activity android:name=".Daycare.License.AddLicenseActivity"/>
+        <activity android:name=".Daycare.License.EditLicenseActivity"/>
+        <activity android:name=".Daycare.LocationPriceActivity">
+        </activity>
+        <activity android:name=".Parent.Child.AddChildActivity"/>
+        <activity android:name=".Parent.Child.EditChildActivity"/>
+        <activity android:name=".Parent.Specialist.SpecialistActivity"/>
+        <activity android:name=".Parent.Specialist.SpecialistDetailsActivity">
+        </activity>
+        <activity android:name=".Parent.DayCare.DayCareActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA-vZbMAS455GsKvKUpEQli-Nje-0H1Lno"/>
+
+        <activity android:name=".Daycare.DaycareMainActivity">
+        </activity>
+        <activity android:name=".Admin.Daycare.DayCareActivity">
+        </activity>
+        <activity android:name=".PasswordActivity">
+        </activity>
+        <activity android:name=".ProfileActivity">
+        </activity>
+        <activity android:name=".Admin.AdminMainActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Admin.Daycare.Working.WorkingHourActivity"/>
+        <activity android:name=".Admin.Daycare.License.LicenseActivity"/>
+        <activity android:name=".Admin.Specialist.SpecialistActivity"/>
+        <activity android:name=".Daycare.WorkingHours.WorkingHourActivity"/>
+        <activity android:name=".Daycare.Ads.AdsActivity"/>
+        <activity android:name=".Daycare.Specialist.Ads.AdsActivity"/>
+        <activity android:name=".Daycare.Specialist.WokingHours.WorkingHourActivity"/>
+        <activity android:name=".Admin.Parent.ParentActivity"/>
+        <activity android:name=".Admin.ForgetPasswordActivity"/>
+        <activity android:name=".Daycare.Worker.WorkerActivity"/>
+        <activity android:name=".Parent.DayCare.Worker.WorkerActivity"/>
+        <activity android:name=".Daycare.Complaint.ComplaintReplayActivity"/>
+        <activity android:name=".Daycare.Specialist.Child.ChildActivity"/>
+    </application>
+
+</manifest>

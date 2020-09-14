@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_marginTop="200dp"
+            android:id="@+id/layoutInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="#4AFFFFFF"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:drawablePadding="20dp"
+                    android:hint="اسم المستخدم"
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:drawablePadding="20dp"
+                    android:hint="كلمة المرور"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+                    android:textDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+                android:textColor="#FFF"
+                android:background="@drawable/rec_gradient"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:id="@+id/login"
+                android:text="تسجيل الدخول"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <Button
+                android:textColor="#FFF"
+                android:background="@drawable/rec_gradient"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:id="@+id/signup"
+                android:text="تسجيل مستخدم جديد"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:text="نسيت كلمة المرور"
+                android:id="@+id/forget"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/header" android:id="@+id/aaa"/>
+    <TextView
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/aaa"
+            android:text="تسجيل الدخول"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

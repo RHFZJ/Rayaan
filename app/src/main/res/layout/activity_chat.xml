@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/white"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+    <include layout="@layout/header"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="الابناء"
+        android:id="@+id/childs"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rec_gradient"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="40dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/listView" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="الرسالة"
+                android:layout_height="wrap_content"
+                android:id="@+id/msg_input" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ارسال"
+                android:id="@+id/btn_send"/>
+    </LinearLayout>
+</LinearLayout>
